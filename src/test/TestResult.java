@@ -2,11 +2,14 @@ package test;
 
 import domain.Exercise;
 
+import java.util.Scanner;
+
 public class TestResult {
 
     public static void main(String[] args) {
-
-        int R=10;
-        System.out.println("Area of a circle for R="+R+"m is "+Exercise.Calculate(R)+"m"+'\u00B2');
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter your number:");
+        int number = in.nextInt();
+        System.out.println("your result: "+Exercise.Calculate(number));
     }
 }
